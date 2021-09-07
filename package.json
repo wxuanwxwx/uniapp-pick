@@ -6,5 +6,8 @@
   "license": "MIT",
   "bin": {
     "init-vue": "./bin/init-vue.js"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }
