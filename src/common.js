@@ -1,1 +1,3 @@
-export const name = '咕咕咕';
+module.exports = {
+  name: '咕咕咕'
+}
