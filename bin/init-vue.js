@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 
-
-console.log('初始化vue');
+const path = require('path');
+const Compiler = require('../lib/Compiler');
+let config = require(path.resolve('webpack.config.js'));
+new Compiler(config).start();
