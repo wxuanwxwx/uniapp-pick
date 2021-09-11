@@ -1,5 +1,5 @@
 const path = require('path');
-
+const HtmlPlugin = require('./test/HtmlPlugin');
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -22,6 +22,12 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlPlugin({
+      filename: 'index.html',
+      template: './template/index.html'
+    })
+  ],
   mode: 'development'
 }
 
